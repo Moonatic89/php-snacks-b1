@@ -43,6 +43,14 @@
 
 <div class="card teachers">
 
+<?php
+for ($i=0; $i < (count($db[teachers])) ; $i++) { ?> 
+
+    echo $db[teachers][$i][name] . " " . $db[teachers][$i][lastname];
+    // echo $db[teachers[$i["name"]]] . " " . $db[teachers[$i]["lastname"]];
+}
+
+?>
 
 </div>
 
