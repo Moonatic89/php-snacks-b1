@@ -1,3 +1,15 @@
+<?php
+
+$basketEncounter = [ 
+ ["Milano", "Cantù", 55, 60], 
+ ["Montruppo Carminese", "Badabonzi", 75, 86], 
+ ["Luigiana", "Luang Parang", 3, 99], 
+];
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +19,7 @@
     <title>snack01</title>
 </head>
 <body>
-    
-<?php
-
-$basketEncounter = [ 
- ["Olimpia Milano", "Cantù", 55, 60], 
- ["Olimpia Milano", "Cantù", 75, 86], 
- ["Olimpia Milano", "Cantù", 3, 99], 
-];
-
-var_dump($basketEncounter);
-?>
+ 
 
 
 
