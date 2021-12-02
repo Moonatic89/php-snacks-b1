@@ -22,42 +22,56 @@ Se è tutto corretto, stampa Accesso Riuscito, altrimenti Accesso Negato
  $name= $_GET["name"];
  $mail= $_GET["text"];
  $age= $_GET["age"];
+
+
+
 ?>
 
 <h1>TITOLO</h1>
 
 <div class="formgroup">
+<form action="" method="get">
 
     <label for="name">Inserisci Nome</label>
     <input type="text" id="name">
-
+    
     <label for="name">Inserisci Email</label>
     <input type="text" id="text">
-
+    
     <label for="name">Inserisci Età</label>
     <input type="text" id="age">
-
+    
+    
+    <input type="submit" value="Submit">
+    
+</form>
 
 </div>
 
 <div class="result">
 
 <?php 
-if (count("name") <= 2){
+if (count($name) <= 2) {
 ?>
 
 <h2>Accesso Negato</h2>
 
-<?php } elseif (!str_contains($mail, "@") or !str_contains($mail, ".")) {?>
+<?php } elseif (!str_contains($mail, "@") or !str_contains($mail, ".")) { ?>
 
 <h2>Accesso Negato</h2>
 
-<?php } elseif (!is_int($age)) {?>
+<?php } elseif (!is_int($age)) { ?>
 
 <h2>Accesso Negato</h2>
-<?php } else {?>
+
+<?php } else { ?>
+
 <h2>Accesso Consentito</h2>
-<?php } ?>
+
+<?php } 
+ var_dump($name, $mail, $age)
+
+?>
 
 </div>
 
