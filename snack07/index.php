@@ -43,8 +43,6 @@
 ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,26 +69,15 @@ for ($i=0; $i < (count($class)); $i++) {  ?>
 <?php 
 
 $sum = array_sum($class[$i][vote]);
-
 $media = $sum / count($class[$i][vote]);
-
 echo $media;
 
 ?>
 
-
-
-
 </p>
-
-    
 
 <?php
 }
-
-
-
-
 ?>
 
 

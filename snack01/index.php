@@ -1,9 +1,20 @@
 <?php
 
-$basketEncounter = [ 
- ["Milano", "Cantù", 55, 60], 
- ["Montruppo Carminese", "Badabonzi", 75, 86], 
- ["Luigiana", "Luang Parang", 3, 99], 
+$basketEncounter = [  
+    ['homeTeam' => "Milano", 
+    'guestTeam' =>"Cantù", 
+    'homeScore' => 55, 
+    'guestScore' => 60], 
+    
+    ['homeTeam' => "Montruppo Carminese", 
+    'guestTeam' =>"Badabonzi", 
+    'homeScore' => 75, 
+    'guestScore' => 86], 
+    
+    ['homeTeam' => "Luigiana", 
+    'guestTeam' =>"Luang Parang", 
+    'homeScore' => 3, 
+    'guestScore' => 99] 
 ];
 ?>
 
@@ -23,21 +34,23 @@ $basketEncounter = [
 
 
 
-<h1>Games Point List:</h1>
-
-
-
+<h1>SNACK 01 - Encounter results:</h1>
 
 <ul>
 
     <?php 
-    for ($i = 0; $i < count($basketEncounter); $i++){
-     echo $basketEncounter[i][0]; 
-     echo $basketEncounter[i][1];  
-     echo $basketEncounter[i][2];
-     echo $basketEncounter[i][3];
+    for ($i = 0; $i < count($basketEncounter); $i++){?>
+<li>
 
-    } ?>
+<?php 
+echo $basketEncounter[$i][homeTeam];
+?>
+
+</li>
+
+
+  <?php 
+} ?>
     
 </ul>
 
