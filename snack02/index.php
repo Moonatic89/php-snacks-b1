@@ -48,8 +48,16 @@ if (count("name") <= 2){
 
 <h2>Accesso Negato</h2>
 
-<?php } elseif ?>
+<?php } elseif (!str_contains($mail, "@") or !str_contains($mail, ".")) {?>
 
+<h2>Accesso Negato</h2>
+
+<?php } elseif (!is_int($age)) {?>
+
+<h2>Accesso Negato</h2>
+<?php } else {?>
+<h2>Accesso Consentito</h2>
+<?php } ?>
 
 </div>
 
