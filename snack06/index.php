@@ -36,6 +36,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+<style>
+.card {
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+
+.teachers{
+    background-color: gray;
+}
+
+.posts{
+    background-color: green;
+}
+
+</style>
+
+
 </head>
 <body>
     
@@ -46,15 +67,34 @@
 <?php
 for ($i=0; $i < (count($db[teachers])) ; $i++) { ?> 
 
-    echo $db[teachers][$i][name] . " " . $db[teachers][$i][lastname];
-    // echo $db[teachers[$i["name"]]] . " " . $db[teachers[$i]["lastname"]];
-}
+<p> <?php
+echo $db[teachers][$i][name] . " " . $db[teachers][$i][lastname];
 
+?>
+</p>
+
+<?php
+}
 ?>
 
 </div>
 
-<div class="card posts"></div>
+<div class="card posts">
+
+<?php
+for ($i=0; $i < (count($db[pm])) ; $i++) { ?> 
+
+<p> <?php
+echo $db[pm][$i][name] . " " . $db[pm][$i][lastname];
+
+?>
+</p>
+
+<?php
+}
+?>
+
+</div>
 
 
 </body>
