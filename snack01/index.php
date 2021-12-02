@@ -10,13 +10,15 @@
     
 <?php
 
-$basketEncounter = array ( 
- array("Olimpia Milano", "Cantù", 55, 60), 
- array("Olimpia Milano", "Cantù", 75, 86), 
- array("Olimpia Milano", "Cantù", 3, 99), 
-);
+$basketEncounter = [ 
+ ["Olimpia Milano", "Cantù", 55, 60], 
+ ["Olimpia Milano", "Cantù", 75, 86], 
+ ["Olimpia Milano", "Cantù", 3, 99], 
+];
 
+var_dump($basketEncounter);
 ?>
+
 
 
 <h1>Games Point List:</h1>
@@ -25,33 +27,17 @@ $basketEncounter = array (
 
 
 <ul>
+
+    <?php 
+    for ($i = 0; $i < count($basketEncounter); $i++){
+     echo $basketEncounter[i][0]; 
+     echo $basketEncounter[i][1];  
+     echo $basketEncounter[i][2];
+     echo $basketEncounter[i][3];
+
+    } ?>
     
-    <?php
-for ($i; $i > count($basketEncounter); $i++){?>
-
-<li><?php echo $basketEncounter[i];  ?></li>
-
-
-
-
-}
 </ul>
-
-
-
-<!-- 
-<?php
-
-// $basketEncounter = array ( 
-//  array("Olimpia Milano", "Cantù", 55, 60), 
-//  array("Olimpia Milano", "Cantù", 75, 86), 
-//  array("Olimpia Milano", "Cantù", 3, 99), 
-// );
-
-?> -->
-
-
-
 
 </body>
 </html>
