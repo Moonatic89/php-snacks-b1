@@ -1,6 +1,7 @@
 <?php
  
 //Dall'array, stampa gli insegnanti in un rettangolo grigio e i PM in uno verde
+
     $db = [
         'teachers' => [
             [
@@ -38,5 +39,15 @@
 </head>
 <body>
     
+<h1>SNACK 06 - Teacher and Posts</h1>
+
+<div class="card teachers">
+
+
+</div>
+
+<div class="card posts"></div>
+
+
 </body>
 </html>
