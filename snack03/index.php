@@ -54,5 +54,27 @@ $posts = [
 
 <h1>POSTS</h1>
 
+
+<?php
+
+for ($i=0; $i < count($posts); $i++) { 
+    echo "<p>";
+    echo $posts[$i];
+    // echo ($posts[$i]);
+    // echo $posts[$i][text];
+    echo "</p>";
+}
+
+    // '10/01/2019' => [
+    //     [
+    //         'title' => 'Post 1',
+    //         'author' => 'Michele Papagni',
+    //         'text' => 'Testo post 1'
+    //     ],
+
+
+?>
+
+
 </body>
 </html>
