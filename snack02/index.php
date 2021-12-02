@@ -40,7 +40,18 @@ Se è tutto corretto, stampa Accesso Riuscito, altrimenti Accesso Negato
 
 </div>
 
-<div class="result"></div>
+<div class="result">
+
+<?php 
+if (count("name") <= 2){
+?>
+
+<h2>Accesso Negato</h2>
+
+<?php } elseif ?>
+
+
+</div>
 
 </body>
 
