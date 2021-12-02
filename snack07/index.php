@@ -55,5 +55,44 @@
 </head>
 <body>
     
+<h1>SNACK 07 - Class Progress:</h1>
+
+<?php
+
+for ($i=0; $i < (count($class)); $i++) {  ?>
+
+<p>
+<span>Nome Studente:</span>   
+
+<?php echo $class[$i][name] . " " . $class[$i][lastname] ; ?>
+
+<span>Media Voti:</span>
+
+<?php 
+
+$sum = array_sum($class[$i][vote]);
+
+$media = $sum / count($class[$i][vote]);
+
+echo $media;
+
+?>
+
+
+
+
+</p>
+
+    
+
+<?php
+}
+
+
+
+
+?>
+
+
 </body>
 </html>
