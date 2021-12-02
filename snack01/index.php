@@ -43,7 +43,10 @@ $basketEncounter = [
 <li>
 
 <?php 
-echo $basketEncounter[$i][homeTeam];
+echo $basketEncounter[$i][homeTeam] . " "
+   . $basketEncounter[$i][guestTeam] . " "
+   . $basketEncounter[$i][homeScore] . " " 
+   . $basketEncounter[$i][guestScore];
 ?>
 
 </li>
