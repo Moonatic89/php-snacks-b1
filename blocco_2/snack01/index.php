@@ -32,6 +32,9 @@ $ads = [
 
 ];
 
+$placeholder = "";
+
+
 ?>
 
 
@@ -48,23 +51,28 @@ $ads = [
 <h1>COMMERCIAL:</h1>
 
 
-<img src="
-
-<?php 
+<?php
 
 while ($flag == false) {
+    
+$randAd = rand(0, count($ads) -1);
 
-    $randAd = rand(0, (count($ads) -1));
-
-
-    if ($ads[$rand][is_active]) {
-      $flag = true;
-      echo $ads[$rand][image_path];
-    }
+if ($ads[$randAd][is_active]) {
+$flag = true;
+$placeholder = $ads[$randAd][image_path];
 }
+    }
+
 ?>
 
-" alt="">
+
+<img src=" <?php echo $placeholder; ?> " alt="">
+
+
+
+
+
+
 
 
 
