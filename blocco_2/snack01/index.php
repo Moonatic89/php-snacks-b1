@@ -45,11 +45,20 @@ $placeholder = "";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        img{
+            width: 500px;
+        }
+        .commercial{
+            border: 2px solid black;
+            border-radius: 15px
+        }
+    </style>
 </head>
 <body>
     
 <h1>COMMERCIAL:</h1>
-
 
 <?php
 
@@ -66,7 +75,7 @@ $placeholder = $ads[$randAd][image_path];
 ?>
 
 
-<img src=" <?php echo $placeholder; ?> " alt="">
+<img class="commercial" src=" <?php echo $placeholder; ?> " alt="">
 
 
 
