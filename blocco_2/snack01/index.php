@@ -69,14 +69,15 @@ $randAd = rand(0, count($ads) -1);
 if ($ads[$randAd][is_active]) {
 $flag = true;
 $placeholder = $ads[$randAd][image_path];
+$url = $ads[$randAd][link];
 }
     }
 
 ?>
 
-
+<a href="<?php echo $url; ?>">
 <img class="commercial" src=" <?php echo $placeholder; ?> " alt="">
-
+</a>
 
 
 
